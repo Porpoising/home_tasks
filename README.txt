@@ -1,1 +1,1 @@
-Course tasks and home work repository
+Tasks from courses and homework repository
