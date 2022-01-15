@@ -1,7 +1,7 @@
 import csv
 from collections import Counter
 
-with open('../Datasets/Crimes.csv') as crimes_data:
+with open('../datasets/Crimes.csv') as crimes_data:
     reader = csv.DictReader(crimes_data)
     crime_list = Counter()
     for row in reader:
