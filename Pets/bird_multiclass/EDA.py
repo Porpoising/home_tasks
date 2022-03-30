@@ -8,7 +8,7 @@ import numpy as np
 
 import os
 
-birds = pd.read_csv('../docs/birds.csv')
+birds = pd.read_csv('../../../bird_multiclass/docs/birds.csv')
 birds_label_grouped = birds[birds['data set'] == 'train'] \
     .groupby('labels', as_index=False).agg({'class index': 'count'})
 birds_label_grouped = birds_label_grouped[['class index', 'labels']]
