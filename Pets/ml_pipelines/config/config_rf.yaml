@@ -1,0 +1,22 @@
+input_source_data: 'data/raw/heart.csv'
+splitting_val_size: 0.1
+
+
+model:
+  type: 'RandomForestClassifier'
+  save_folder: '../ml_pipelines/models/RandomForestClassifier'
+  model_filename: 'model.dump'
+  metrics_filename: 'metrics.json'
+  params:
+    n_jobs: -1
+    criterion: 'gini'
+    max_depth: 10
+    min_samples_leaf: 3
+
+
+#s3_params:
+#  endpoint_url: 'http://localhost9000'
+#  aws_access_key_id: 'testtest'
+#  aws_secret_access_key: 'testtest'
+#  bucket_name: "ml-project"
+#  data_path: "creditcard.csv"
