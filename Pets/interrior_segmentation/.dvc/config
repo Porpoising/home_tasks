@@ -1,0 +1,5 @@
+[core]
+    remote = exposit_final_task
+['remote "exposit_final_task"']
+    url = s3://darkened-retype-demise/final_task
+    endpointurl = https://fra1.digitaloceanspaces.com/
