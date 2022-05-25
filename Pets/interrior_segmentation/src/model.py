@@ -72,10 +72,10 @@ def unet(shape: Tuple = (256, 256, 3),
 
     final = layers.concatenate([output1, output2, output3])
 
-    print('out1 shape:', tf.shape(output1),
-          'out2 shape:', tf.shape(output2),
-          'out3 shape:', tf.shape(output3),
-          'final shape:', tf.shape(final), sep='\n')
+    # print('out1 shape:', tf.shape(output1),
+    #       'out2 shape:', tf.shape(output2),
+    #       'out3 shape:', tf.shape(output3),
+    #       'final shape:', tf.shape(final), sep='\n')
 
     model = tf.keras.Model(inputs=input, outputs=final, name='U-Net')
 
